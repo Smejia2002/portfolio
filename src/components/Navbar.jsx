@@ -30,11 +30,16 @@ function Navbar() {
               </a>
               
               {/* Botón CV */}
-              <button className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-lg 
-                   hover:from-blue-600 hover:to-purple-600 transition-all duration-300 
-                   transform hover:scale-105 shadow-md hover:shadow-lg">
+              <a 
+                href="https://drive.google.com/file/d/16QxaLtA19lK3r1x6sJS2ZUcrXCyXuZjQ/preview" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-lg 
+                           hover:from-blue-600 hover:to-purple-600 transition-all duration-300 
+                           transform hover:scale-105 shadow-md hover:shadow-lg inline-flex items-center"
+              >
                 Ver CV
-              </button>
+              </a>
             </div>
           </div>
 
