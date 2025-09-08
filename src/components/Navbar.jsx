@@ -19,11 +19,14 @@ function Navbar() {
               <a href="#inicio" className="text-white hover:text-gray-300 transition-colors">
                 Inicio
               </a>
+              <a href="#about-me" className="text-white hover:text-gray-300 transition-colors">
+                About Me
+              </a>
               <a href="#projects" className="text-white hover:text-gray-300 transition-colors">
-                Proyectos
+                Projects
               </a>
               <a href="#contact" className="text-white hover:text-gray-300 transition-colors">
-                Contacto
+                Contact
               </a>
               
               {/* Botón CV */}
