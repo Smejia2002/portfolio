@@ -4,7 +4,7 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-gray-800">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           
@@ -30,7 +30,9 @@ function Navbar() {
               </a>
               
               {/* Botón CV */}
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+              <button className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-lg 
+                   hover:from-blue-600 hover:to-purple-600 transition-all duration-300 
+                   transform hover:scale-105 shadow-md hover:shadow-lg">
                 Ver CV
               </button>
             </div>
