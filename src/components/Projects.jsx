@@ -54,9 +54,9 @@ function Projects() {
     >
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 right-40 w-32 h-32 border border-purple-500 transform rotate-45"></div>
-        <div className="absolute bottom-40 left-20 w-24 h-24 border border-blue-500 transform -rotate-12"></div>
-        <div className="absolute top-80 right-80 w-16 h-16 border border-purple-400 transform rotate-30"></div>
+        <div className="absolute top-20 right-40 w-32 h-32 border border-emerald-600 transform rotate-45"></div>
+        <div className="absolute bottom-40 left-20 w-24 h-24 border border-emerald-700 transform -rotate-12"></div>
+        <div className="absolute top-80 right-80 w-16 h-16 border border-emerald-500 transform rotate-30"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -66,7 +66,7 @@ function Projects() {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
             Mis Proyectos
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-emerald-700 to-emerald-900 mx-auto"></div>
         </div>
 
         {/* Grid de proyectos */}
@@ -75,7 +75,7 @@ function Projects() {
             <div
               key={project.id}
               className="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 
-                         hover:border-purple-500/50 transition-all duration-300 
+                         hover:border-emerald-500/50 transition-all duration-300 
                          hover:transform hover:scale-105 group"
             >
               {/* Imagen del proyecto */}
@@ -151,8 +151,8 @@ function Projects() {
 
                 {/* Estado del proyecto */}
                 {project.status === 'coming-soon' && (
-                  <div className="flex items-center text-purple-400 text-sm">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mr-2 animate-pulse"></div>
+                  <div className="flex items-center text-emerald-500 text-sm">
+                    <div className="w-2 h-2 bg-emerald-500 rounded-full mr-2 animate-pulse"></div>
                     En desarrollo
                   </div>
                 )}
@@ -168,8 +168,8 @@ function Projects() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-purple-500 to-blue-500 
-                       text-white font-medium rounded-full hover:from-purple-600 hover:to-blue-600 
+            className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-emerald-700 to-emerald-900 
+                       text-white font-medium rounded-full hover:from-emerald-600 hover:to-emerald-700 
                        transition-all duration-300 transform hover:scale-105"
           >
             Contáctame

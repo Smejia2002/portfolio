@@ -10,23 +10,29 @@ function Navbar() {
           
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h2 className="text-white text-xl font-bold">Logo</h2>
+            <a href="#home" className="flex items-center">
+              <div className="text-white font-bold text-xl">
+                <span className="text-emerald-400">&lt;</span>
+                <span className="mx-1">SDev</span>
+                <span className="text-emerald-400">/&gt;</span>
+              </div>
+            </a>
           </div>
 
           {/* Navigation Links */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
-              <a href="#inicio" className="text-white hover:text-gray-300 transition-colors">
+              <a href="#home" className="text-white hover:text-gray-300 transition-colors">
                 Inicio
               </a>
               <a href="#about-me" className="text-white hover:text-gray-300 transition-colors">
-                About Me
+                Sobre Mí
               </a>
               <a href="#projects" className="text-white hover:text-gray-300 transition-colors">
-                Projects
+                Proyectos
               </a>
               <a href="#contact" className="text-white hover:text-gray-300 transition-colors">
-                Contact
+                Contacto
               </a>
               
               {/* Botón CV */}
@@ -34,8 +40,8 @@ function Navbar() {
                 href="https://drive.google.com/file/d/16QxaLtA19lK3r1x6sJS2ZUcrXCyXuZjQ/preview" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-lg 
-                           hover:from-blue-600 hover:to-purple-600 transition-all duration-300 
+                className="bg-gradient-to-r from-emerald-700 to-emerald-900 text-white px-4 py-2 rounded-lg 
+                           hover:from-emerald-600 hover:to-emerald-700 transition-all duration-300 
                            transform hover:scale-105 shadow-md hover:shadow-lg inline-flex items-center"
               >
                 Ver CV
