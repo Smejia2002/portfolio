@@ -70,7 +70,7 @@ function Projects() {
         
         {/* Header de la sección */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+          <h2 className="font-sans text-4xl sm:text-5xl font-bold text-white mb-4">
             Mis Proyectos
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emerald-700 to-emerald-900 mx-auto"></div>
@@ -125,8 +125,8 @@ function Projects() {
 
               {/* Contenido de la card */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
-                <p className="text-gray-300 mb-4 text-sm leading-relaxed">
+                <h3 className="font-sans text-xl font-bold text-white mb-3">{project.title}</h3>
+                <p className="font-sans text-gray-300 mb-4 text-sm leading-relaxed">
                   {project.description}
                 </p>
 
@@ -134,12 +134,12 @@ function Projects() {
                 {project.metrics && (
                   <div className="grid grid-cols-2 gap-3 mb-4 p-3 bg-gray-700/50 rounded-lg">
                     <div className="text-center">
-                      <div className="text-emerald-400 font-bold text-lg">{project.metrics.accuracy}</div>
-                      <div className="text-gray-400 text-xs">Precisión</div>
+                      <div className="font-sans text-emerald-400 font-bold text-lg">{project.metrics.accuracy}</div>
+                      <div className="font-sans text-gray-400 text-xs">Precisión</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-emerald-400 font-bold text-lg">{project.metrics.impact}</div>
-                      <div className="text-gray-400 text-xs">Impacto</div>
+                      <div className="font-sans text-emerald-400 font-bold text-lg">{project.metrics.impact}</div>
+                      <div className="font-sans text-gray-400 text-xs">Impacto</div>
                     </div>
                   </div>
                 )}
@@ -147,8 +147,8 @@ function Projects() {
                 {/* Highlights del proyecto */}
                 {project.highlights && (
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-gray-300 mb-2">Logros Clave:</h4>
-                    <ul className="text-xs text-gray-400 space-y-1">
+                    <h4 className="font-sans text-sm font-semibold text-gray-300 mb-2">Logros Clave:</h4>
+                    <ul className="font-sans text-xs text-gray-400 space-y-1">
                       {project.highlights.slice(0, 3).map((highlight, index) => (
                         <li key={index} className="flex items-start">
                           <span className="text-emerald-500 mr-2">•</span>
@@ -164,7 +164,7 @@ function Projects() {
                   {project.technologies.map((tech, index) => (
                     <span
                       key={index}
-                      className={`px-3 py-1 text-xs rounded-full border ${
+                      className={`font-mono px-3 py-1 text-xs rounded-full border ${
                         project.status === 'completed'
                           ? 'bg-gray-700 border-gray-600 text-gray-300'
                           : 'bg-gray-700/50 border-gray-600/50 text-gray-400'
@@ -177,7 +177,7 @@ function Projects() {
 
                 {/* Estado del proyecto */}
                 {project.status === 'coming-soon' && (
-                  <div className="flex items-center text-emerald-500 text-sm">
+                  <div className="font-sans flex items-center text-emerald-500 text-sm">
                     <div className="w-2 h-2 bg-emerald-500 rounded-full mr-2 animate-pulse"></div>
                     En desarrollo
                   </div>
@@ -189,12 +189,12 @@ function Projects() {
 
         {/* Call to action */}
         <div className="text-center mt-16">
-          <p className="text-gray-400 text-lg mb-6">
+          <p className="font-sans text-gray-400 text-lg mb-6">
             ¿Te interesa conocer más sobre mi trabajo o discutir nuevas oportunidades?
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-emerald-700 to-emerald-900 
+            className="font-sans inline-flex items-center px-8 py-3 bg-gradient-to-r from-emerald-700 to-emerald-900 
                        text-white font-medium rounded-full hover:from-emerald-600 hover:to-emerald-700 
                        transition-all duration-300 transform hover:scale-105"
           >

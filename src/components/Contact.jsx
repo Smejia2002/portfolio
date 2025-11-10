@@ -78,10 +78,10 @@ function Contact() {
         
         {/* Header de la sección */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+          <h2 className="font-sans text-4xl sm:text-5xl font-bold text-white mb-6">
             Conectemos
           </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          <p className="font-sans text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
             ¿Tienes un proyecto en mente o simplemente quieres conversar sobre tecnología? 
             Me encantaría escuchar de ti.
           </p>
@@ -93,8 +93,8 @@ function Contact() {
           
           {/* Redes sociales */}
           <div className="mb-12">
-            <h3 className="text-2xl font-bold text-white text-center mb-8">
-              Encuéntrame en:
+            <h3 className="font-sans text-2xl font-bold text-white text-center mb-8">
+              Encuéntrama en:
             </h3>
             
             <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
@@ -113,7 +113,7 @@ function Contact() {
                   </div>
                   
                   {/* Nombre */}
-                  <span className="text-gray-300 group-hover:text-white font-medium text-sm">
+                  <span className="font-sans text-gray-300 group-hover:text-white font-medium text-sm">
                     {network.name}
                   </span>
                 </a>
@@ -124,17 +124,17 @@ function Contact() {
           {/* Botón principal de contacto */}
           <div className="text-center">
             <div className="mb-6">
-              <h3 className="text-xl font-semibold text-white mb-2">
+              <h3 className="font-sans text-xl font-semibold text-white mb-2">
                 ¿Prefieres el email directo?
               </h3>
-              <p className="text-gray-400">
+              <p className="font-sans text-gray-400">
                 Haz clic aquí y tu cliente de correo se abrirá automáticamente
               </p>
             </div>
             
             <a
               href={`mailto:${contactInfo.email}?subject=Hola Samu, me interesa conectar&body=Hola Samu,%0D%0A%0D%0AMe gustaría conectar contigo para discutir...`}
-              className="inline-flex items-center px-10 py-4 bg-gradient-to-r from-emerald-700 to-emerald-900 
+              className="font-sans inline-flex items-center px-10 py-4 bg-gradient-to-r from-emerald-700 to-emerald-900 
                          text-white font-semibold text-lg rounded-full hover:from-emerald-600 hover:to-emerald-700 
                          transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
@@ -145,7 +145,7 @@ function Contact() {
             </a>
             
             {/* Email visible */}
-            <p className="text-gray-400 text-sm mt-4">
+            <p className="font-mono text-gray-400 text-sm mt-4">
               {contactInfo.email}
             </p>
           </div>

@@ -11,7 +11,7 @@ function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#home" className="flex items-center">
-              <div className="text-white font-bold text-xl">
+              <div className="font-mono text-white font-bold text-xl">
                 <span className="text-emerald-400">&lt;</span>
                 <span className="mx-1">SDev</span>
                 <span className="text-emerald-400">/&gt;</span>
@@ -22,25 +22,25 @@ function Navbar() {
           {/* Navigation Links */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
-              <a href="#home" className="text-white hover:text-gray-300 transition-colors">
+              <a href="#home" className="font-sans text-white hover:text-gray-300 transition-colors">
                 Inicio
               </a>
-              <a href="#about-me" className="text-white hover:text-gray-300 transition-colors">
+              <a href="#about-me" className="font-sans text-white hover:text-gray-300 transition-colors">
                 Sobre Mí
               </a>
-              <a href="#projects" className="text-white hover:text-gray-300 transition-colors">
+              <a href="#projects" className="font-sans text-white hover:text-gray-300 transition-colors">
                 Proyectos
               </a>
-              <a href="#contact" className="text-white hover:text-gray-300 transition-colors">
+              <a href="#contact" className="font-sans text-white hover:text-gray-300 transition-colors">
                 Contacto
               </a>
               
               {/* Botón CV */}
               <a 
-                href="https://drive.google.com/file/d/16QxaLtA19lK3r1x6sJS2ZUcrXCyXuZjQ/preview" 
+                href="https://drive.google.com/file/d/1mbZchCztJEJFEOKSXJpapnHjRuUN0qli/view" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-emerald-700 to-emerald-900 text-white px-4 py-2 rounded-lg 
+                className="font-sans bg-gradient-to-r from-emerald-700 to-emerald-900 text-white px-4 py-2 rounded-lg 
                            hover:from-emerald-600 hover:to-emerald-700 transition-all duration-300 
                            transform hover:scale-105 shadow-md hover:shadow-lg inline-flex items-center"
               >

@@ -18,12 +18,12 @@ function Hero() {
           {/* Lado izquierdo - Texto */}
           <div className="space-y-8">
             {/* Título principal */}
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              Hola, Soy Samu <span className="inline-block">🧑🏽‍💻</span>
+            <h1 className="font-sans text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight">
+              Hola, Soy Samuel <span className="inline-block">🧑🏽‍💻</span>
             </h1>
 
             {/* Descripción */}
-            <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl">
+            <p className="font-sans text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl">
               Soy un apasionado por la tecnología con fuerte impulso por crear y
               resolver desafíos reales. Mi experiencia convierte retos complejos
               en soluciones creativas. Siempre explorando novedades con el deseo
@@ -33,7 +33,7 @@ function Hero() {
             <div className="pt-4">
               <a
                 href="#contact"
-                className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-emerald-700 to-emerald-900
+                className="font-sans inline-flex items-center px-8 py-3 bg-gradient-to-r from-emerald-700 to-emerald-900
                text-white font-semibold rounded-full hover:from-emerald-600 hover:to-emerald-700
                transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
@@ -56,21 +56,10 @@ function Hero() {
 
             {/* Indicador de scroll */}
             <div className="pt-6">
-              <div className="flex items-center space-x-2 text-gray-400 animate-bounce">
-                <span className="text-sm">Scroll para explorar</span>
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                  />
-                </svg>
+              <div className="flex justify-end animate-bounce">
+                <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
+                  <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -82,20 +71,13 @@ function Hero() {
               <div className="relative w-full h-full">
                 {/* Marco con gradiente */}
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-700 to-emerald-900 rounded-2xl p-1">
-                  <div className="w-full h-full bg-gray-800 rounded-2xl flex items-center justify-center border-2 border-gray-700">
-                    {/* Placeholder para la foto */}
-                    <div className="text-center text-gray-400">
-                      <div className="w-24 h-24 mx-auto mb-4 bg-gray-700 rounded-full flex items-center justify-center">
-                        <svg
-                          className="w-12 h-12"
-                          fill="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                        </svg>
-                      </div>
-                      <p className="text-sm">Tu foto aquí</p>
-                    </div>
+                  <div className="w-full h-full bg-gray-800 rounded-2xl border-2 border-gray-700 overflow-hidden relative">
+                    {/* Foto de perfil */}
+                    <img 
+                      className="absolute inset-0 w-full h-full object-cover object-center rounded-xl" 
+                      src="/images/samuel.JPG" 
+                      alt="Samuel Mejía" 
+                    />
                   </div>
                 </div>
 

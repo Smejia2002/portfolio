@@ -14,7 +14,7 @@ function About() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header de la sección */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+          <h2 className="font-sans text-4xl sm:text-5xl font-bold text-white mb-4">
             Sobre Mí
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emerald-700 to-emerald-900 mx-auto"></div>
@@ -26,7 +26,7 @@ function About() {
           <div className="space-y-8">
             {/* Párrafos descriptivos */}
             <div className="space-y-6">
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="font-sans text-lg text-gray-300 leading-relaxed">
                 Mi formación en{" "}
                 <span className="text-emerald-400 font-semibold">ingeniería</span>{" "}
                 me ha enseñado que los mejores proyectos nacen cuando la lógica 
@@ -37,7 +37,7 @@ function About() {
                 </span>.
               </p>
 
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="font-sans text-lg text-gray-300 leading-relaxed">
                 Lo que más me motiva es ese momento en que una funcionalidad{" "}
                 <span className="text-emerald-400 font-semibold">cobra vida</span>{" "}
                 y realmente impacta en la experiencia del usuario. Mi rol como 
@@ -49,7 +49,7 @@ function About() {
                 y compartir conocimiento.
               </p>
 
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="font-sans text-lg text-gray-300 leading-relaxed">
                 A través de mi experiencia, he desarrollado un enfoque metodológico 
                 que convierte{" "}
                 <span className="text-emerald-400 font-semibold">
@@ -61,7 +61,7 @@ function About() {
 
             {/* Tags de habilidades */}
             <div className="pt-8">
-              <h3 className="text-xl font-bold text-white mb-4">
+              <h3 className="font-sans text-xl font-bold text-white mb-4">
                 Formación
               </h3>
               <div className="flex flex-wrap gap-3">
@@ -76,7 +76,7 @@ function About() {
                 ].map((skill, index) => (
                   <span
                     key={index}
-                    className="px-4 py-2 bg-gray-700 border border-gray-600 text-gray-300 
+                    className="font-mono px-4 py-2 bg-gray-700 border border-gray-600 text-gray-300 
                                rounded-full text-sm hover:border-emerald-500 hover:text-emerald-400 
                                transition-colors cursor-default"
                   >
